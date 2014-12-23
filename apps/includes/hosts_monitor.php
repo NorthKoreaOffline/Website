@@ -36,3 +36,6 @@ function checkIpPort($ip, $port)
         return false;
     }
 }
+date_default_timezone_set("UTC");
+
+file_put_contents('scan_results.log', $hosts_offline_percent . ':' . $hosts_offline_nonpercent . ':' . date("Y-m-d H:i:s", time()));

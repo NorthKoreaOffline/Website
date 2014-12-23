@@ -1,17 +1,28 @@
 <?php
+date_default_timezone_set("UTC");
 
 include_once '/var/www/html/apps/includes/websites_monitor.php';
-include_once '/var/www/html/apps/includes/hosts_monitor.php';
 include_once '/var/www/html/apps/includes/twitter_counts.php';
 include_once '/var/www/html/apps/includes/protester_counts.php';
 
+$portScanResults = file_get_contents('scan_results.log');
+$portScanResults = explode(':', $portScanResults);
+
+$hosts_offline_percent = $portScanResults[0];
+$hosts_offline_nonpercent = $portScanResults[1];
+$hosts_offline_scan_finished = $portScanResults[2];
+
 $index = file_get_contents('/var/www/html/templates/index.html');
 
-$index = str_replace('%TAGLINE%', '#TangoDown #MerryChristmas', $index);
+$index = str_replace('%TAGLINE%', '#TangoDown #ChristmasParty', $index);
+
 $index = str_replace('%WEBSITES_OFFLINE%', $websites_offline_percent, $index);
 $index = str_replace('%WEBSITES_OFFLINE_NON%', $websites_offline_nonpercent, $index);
+$index = str_replace('%WEBSITES_OFFLINE_FINISHED%', date("Y-m-d H:i:s", time()), $index);
+
 $index = str_replace('%HOSTS_OFFLINE%', $hosts_offline_percent, $index);
 $index = str_replace('%HOSTS_OFFLINE_NON%', $hosts_offline_nonpercent, $index);
+$index = str_replace('%HOSTS_OFFLINE_FINISHED%', $hosts_offline_scan_finished, $index);
 
 $tweets_count = json_decode($tweets_json);
 $tweets_count = $tweets_count->search_metadata->count;

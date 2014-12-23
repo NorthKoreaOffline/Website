@@ -113,8 +113,7 @@ h5 {
 	line-height: 26px;
 	letter-spacing: 0px;
 	color: #ffffff;
-	padding-top:10px;
-	padding-left:5px;
+	padding-left:20px;
 	margin-top:2px;
 	text-align:center;
 }
@@ -122,7 +121,7 @@ h5 {
 
 .dash-unit h3 {
 	font-weight:300;
-	font-size: 15px;
+	font-size: 12px;
 	line-height: 2px;
 	letter-spacing: 0px;
 	color: #b2c831;
@@ -566,7 +565,7 @@ digiclock {
 	height: 14.313em;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	margin-bottom: 0.563em;
+	margin-bottom: 0.363em;
 	background-position: center center;
 	margin:auto;
 }
@@ -576,7 +575,7 @@ digiclock {
 	height: 14.313em;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	margin-bottom: 0.563em;
+	margin-bottom: 0.363em;
 	background-position: center center;
 	margin:auto;
 }
@@ -860,9 +859,25 @@ a:hover {
 #footerwrap p {
 	color:white;
 	font-size:12px;
-} 
+}
 
+#footerwrap2 {
+    width: 100%;
+    background:#262626;
+    background-image:url('../img/sep-half.png');
+    padding-top:25px;
+    padding-bottom: 25px;
+    border-top-style: solid;
+    border-top-width:8px;
+    border-top-color:#1d1d1d;
+    text-align:center;
+    margin-bottom:25px;
+}
 
+#footerwrap2 p {
+    color:#B2C2F0;
+    font-size:20px;
+}
 /***********FULLCALENDAR STYLE***********/
 
 #external-events {

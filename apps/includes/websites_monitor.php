@@ -36,7 +36,7 @@ $websites_offline_nonpercent = 100 - $websites_offline_percent;
 
 function Visit($url){
     if(gethostbyname($url) != "127.0.0.1") {
-        if ($socket = @ fsockopen($url, 80, $errno, $errstr, 5)) {
+        if ($socket = @ fsockopen($url, 80, $errno, $errstr, 15)) {
             fclose($socket);
             return true;
         } else {
