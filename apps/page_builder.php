@@ -1,12 +1,19 @@
 <?php
 date_default_timezone_set("UTC");
 
+if(file_exists('/var/www/html/builder.lock')) {
+    exit;
+}
+
+file_put_contents('/var/www/html/builder.lock', '.');
+
 include_once '/var/www/html/apps/includes/websites_monitor.php';
+include_once '/var/www/html/apps/includes/hosts_monitor.php';
 include_once '/var/www/html/apps/includes/twitter_counts.php';
 include_once '/var/www/html/apps/includes/protester_counts.php';
 
 $portScanResults = file_get_contents('scan_results.log');
-$portScanResults = explode(':', $portScanResults);
+$portScanResults = explode(';', $portScanResults);
 
 $hosts_offline_percent = $portScanResults[0];
 $hosts_offline_nonpercent = $portScanResults[1];
@@ -73,3 +80,5 @@ $websites = file_get_contents('/var/www/html/templates/websites.html');
 $websites = str_replace('%WEBSITES%', $website_contents, $websites);
 
 file_put_contents('/var/www/html/websites.html', $websites);
+
+unlink('/var/www/html/builder.lock');

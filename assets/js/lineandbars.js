@@ -22,7 +22,7 @@ $(function () {
         renderTo: 'importantchart',
         type: 'column',
         backgroundColor: 'transparent',
-        height: 140,
+        height: 70,
         marginLeft: 3,
         marginRight: 3,
         marginBottom: 0,
@@ -80,22 +80,16 @@ $(function () {
         enabled: false
       }
     });
-      
-    setInterval(function() {
+
       chart.series[0].addPoint(generateNumber(), true, true);
       chart.series[1].addPoint(generateNumber(50, 150), true, true);
-    }, 1000);
-    
-    
-  
-    setInterval(function() {
+
       $('.info-aapl span').each(function(index, elem) {
         $(elem).animate({
           height: generateNumber(1, 40)
         });
       });
 
-    }, 3000);
   });
   
 });

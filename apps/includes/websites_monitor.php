@@ -17,8 +17,6 @@ foreach($websites_list as $website) {
     $website_details = explode(':', $website);
     $online = Visit($website_details[0]);
 
-    echo $website_details[0] . "\n";
-
     if($online) {
         $websites_online++;
         $website_details[] = '<dtitle style="color:red;">Online</dtitle>';

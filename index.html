@@ -105,7 +105,7 @@
             <ul class="nav navbar-nav" style="float:right;">
                 <li class="active"><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
                 <li><a href="websites.html"><i class="icon-folder-open icon-white"></i> North Korean Websites</a></li>
-                <li><a href="#"><i class="icon-th icon-white"></i> North Korean Port Scan In Progress</a></li>
+                <li><a href="#"><i class="icon-folder-open icon-white"></i> North Korean Deep Port Scan in Progress</a></li>
                 <!--<li><a href="tango.html"><i class="icon-calendar icon-white"></i> Tango Down Protester Kit</a></li>-->
             </ul>
         </div><!--/.nav-collapse -->
@@ -124,6 +124,55 @@
     </div><!-- /container -->
 </div><!-- /footerwrap -->
 
+<!-- ZERO ROW OF BLOCKS-->
+<div class="row">
+    <div class="col-sm-3 col-lg-3">
+        <div class="half-unit">
+            <div style="display:inline-block;">
+                <table><tr><td>
+                    <center><p style="font-size:11px; text-transform:uppercase;line-height:10px;margin-top:5px;margin-left:5px;">Packets Per Second</p></center>
+                </td></tr><tr><td class="bottom-line">
+                    <div stlye="margin-top:-15px;">
+                        <canvas id="canvas" class="canvas" width="300" height="300" style="padding-bottom:13px;">
+                        </canvas>
+                    </div>
+                </td></tr></table>
+            </div>
+            <div style="display:inline-block;width:70px;">
+                <table><tr><td>
+                    <center><p style="font-size:11px;text-transform:uppercase;line-height:10px;margin-left:5px;margin-top:5px;">Up Bandwidth</p></center>
+                </td></tr><tr><td class="bottom-line">
+                    <canvas id="canvas2" class="canvas" width="300" height="300" style="padding-bottom:13px;">
+                    </canvas>
+                </td></tr></table>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3 col-lg-6">
+        <div class="half-unit">
+            <dtitle>#ChristmasParty Network Load</dtitle>
+            <hr>
+            <div class="section-graph">
+                <div id="importantchart"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3 col-lg-3">
+        <div class="half-unit">
+            <dtitle>Secret Stats</dtitle>
+            <hr>
+            <div class="flexslider" style="margin-top:-10px;">
+                <ul class="slides">
+                    <li><img src="assets/img/slide01.png" alt="slider"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
 <!-- FIRST ROW OF BLOCKS -->
 <div class="row">
 
@@ -153,8 +202,8 @@
         <div class="dash-unit">
             <dtitle style="color:limegreen">Total Websites Offline</dtitle>
             <div id="load"></div>
-            <h2>14 %</h2>
-            <h3>Last Health Check: 2014-12-23 08:16:10</h3>
+            <h2>26 %</h2>
+            <h3>Last Health Check: 2014-12-23 22:41:47</h3>
         </div>
     </div>
 
@@ -164,7 +213,7 @@
             <dtitle style="color:limegreen;">Total IP Addresses Offline</dtitle>
             <div id="space"></div>
             <h2>64 %</h2>
-            <h3>Last Port Scan: </h3>
+            <h3>Last Port Scan: 2014-12-23 22:41:45</h3>
         </div>
     </div>
 
@@ -181,7 +230,7 @@
         <div class="half-unit">
             <dtitle>North Korea WAN Connectivity</dtitle>
             <hr>
-            <div class="cont">
+            <div class="cont" style="margin-top:32px;">
                 <p><img src="assets/img/down.png" alt="">&nbsp;&nbsp; <bold>Tango Down</bold></p>
             </div>
         </div>
@@ -274,24 +323,69 @@
         </div>
     </div>
 
-    <!-- 30 DAYS STATS - CAROUSEL FLEXSLIDER -->
+
+    <!-- ACCORDION BLOCK -->
     <div class="col-sm-3 col-lg-3">
         <div class="dash-unit">
-            <dtitle>Recent Stats</dtitle>
-            <hr>
-            <br>
-            <br>
-            <div class="flexslider">
-                <ul class="slides">
-                    <li><img src="assets/img/slide01.png" alt="slider"></li>
-                    <li><img src="assets/img/slide02.png" alt="slider"></li>
-                </ul>
-            </div>
-            <div class="cont">
-                <p>North Korea Offline Statistics</p>
-            </div>
+            <dtitle style="padding-bottom: 5px;">Tango Down Party Kit Includes</dtitle>
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle acc-anchor" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                            Toolbox of Educational Software
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle acc-anchor" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                            Collaboration and Planning Tools
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle acc-anchor" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            Network Party Analyitcs Reporter
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle acc-anchor" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            Party Protesting Instruction Manual
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--/accordion -->
         </div>
     </div>
+
 
     <div class="col-sm-3 col-lg-3">
         <!-- TOTAL SUBSCRIBERS BLOCK -->
@@ -309,7 +403,7 @@
             <dtitle>Twitter Followers</dtitle>
             <hr>
             <div class="cont">
-                <p><bold>2 Followers</bold></p>
+                <p><bold>3290 Followers</bold></p>
                 <p><a href="http://twitter.com/NKoreaOffline">@NKoreaOffline</a></p>
             </div>
         </div>
@@ -379,8 +473,8 @@
                     name: 'Income',
                     innerSize: '45%',
                     data: [
-                        { name: 'Offline', y: 14, color: '#fa1d2d' },
-                        { name: 'Online', y: 86, color: '#3d3d3d' }
+                        { name: 'Offline', y: 26, color: '#fa1d2d' },
+                        { name: 'Online', y: 74, color: '#3d3d3d' }
                     ],
                     dataLabels: {
                         enabled: false,
@@ -451,6 +545,8 @@
 <script type="text/javascript" src="assets/js/highcharts.js"></script>
 <script src="assets/js/jquery.flexslider.js" type="text/javascript"></script>
 <script src="assets/js/TimeCircles.js" type="text/javascript"></script>
+<script src="assets/js/gauge.js" type="text/javascript"></script>
+<script src="assets/js/lineandbars.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="assets/js/admin.js"></script>
 <script src="//static.getclicky.com/js" type="text/javascript"></script>

@@ -3,3 +3,4 @@ apps/includes/db.php
 tfeed.php
 toauth/config-sample.php
 toauth/config.php
+get_scan.php
