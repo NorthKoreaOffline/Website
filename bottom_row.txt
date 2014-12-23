@@ -1,0 +1,51 @@
+
+</div><!-- /row -->
+<div class="row">
+    <div class="col-sm-3 col-lg-3">
+        <!-- PAGE VIEWS BLOCK -->
+        <div class="half-unit">
+            <dtitle>Total Protester Downloads</dtitle>
+            <hr>
+            <div class="cont">
+                <p><bold>%DOWNLOADS%</bold></p>
+                <!--<p><img src="assets/img/up-small.png" alt=""> 23.88%</p>-->
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-lg-3">
+        <!-- LIVE VISITORS BLOCK -->
+        <div class="half-unit">
+            <dtitle>Protesters Currently Online</dtitle>
+            <hr>
+            <div class="cont">
+                <p><bold>%ONLINE%</bold></p>
+                <!--<p><img src="assets/img/up-small.png" alt=""> 412 Max. | <img src="assets/img/down-small.png" alt=""> 89 Min.</p>-->
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-lg-3">
+        <!-- PAGE VIEWS BLOCK -->
+        <div class="half-unit">
+            <dtitle>Protesters Online Past 24 Hours</dtitle>
+            <hr>
+            <div class="cont">
+                <p><bold>%24HOURS%</bold></p>
+                <!--<p><img src="assets/img/up-small.png" alt=""> 23.88%</p>-->
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- FAST CONTACT BLOCK -->
+    <div class="col-sm-3 col-lg-3">
+        <div class="half-unit">
+            <dtitle>Most Protesters Online</dtitle>
+            <hr>
+            <div class="cont">
+                <p><bold>%MOST%</bold></p>
+                <!--<p><img src="assets/img/up-small.png" alt=""> 23.88%</p>-->
+            </div>
+        </div>
+    </div>
+</div><!--/row -->
