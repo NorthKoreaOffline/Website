@@ -142,7 +142,7 @@
             </div>
             <div style="display:inline-block;width:70px;">
                 <table><tr><td>
-                    <center><p style="font-size:11px;text-transform:uppercase;line-height:10px;margin-left:5px;margin-top:5px;">Up Bandwidth</p></center>
+                    <center><p style="font-size:11px;text-transform:uppercase;line-height:10px;margin-left:5px;margin-top:5px;">Party Online</p></center>
                 </td></tr><tr><td class="bottom-line">
                     <canvas id="canvas2" class="canvas" width="300" height="300" style="padding-bottom:13px;">
                     </canvas>
@@ -163,15 +163,19 @@
     </div>
 
     <div class="col-sm-3 col-lg-3">
+
         <div class="half-unit">
-            <dtitle>Secret Stats</dtitle>
+            <dtitle>Share via social media</dtitle>
             <hr>
-            <div class="flexslider" style="margin-top:-10px;">
-                <ul class="slides">
-                    <li><img src="assets/img/slide01.png" alt="slider"></li>
-                </ul>
+            <div class="info-user" style="margin-top:30px;margin-bottom:10px;">
+                <span class='st_facebook_large' displayText='Facebook'></span>
+                <span class='st_twitter_large' displayText='Tweet'></span>
+                <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                <span class='st_pinterest_large' displayText='Pinterest'></span>
+                <span class='st_email_large' displayText='Email'></span>
             </div>
         </div>
+
     </div>
 
 </div>
@@ -202,7 +206,7 @@
     <!-- DONUT CHART BLOCK -->
     <div class="col-sm-3 col-lg-3">
         <div class="dash-unit">
-            <dtitle style="color:limegreen">Total Websites Offline</dtitle>
+            <dtitle>Total Websites <span style="color:limegreen;">Offline</span></dtitle>
             <div id="load"></div>
             <h2>%WEBSITES_OFFLINE% %</h2>
             <h3>Last Health Check: %WEBSITES_OFFLINE_FINISHED%</h3>
@@ -212,7 +216,7 @@
     <!-- DONUT CHART BLOCK -->
     <div class="col-sm-3 col-lg-3">
         <div class="dash-unit">
-            <dtitle style="color:limegreen;">Total IP Addresses Offline</dtitle>
+            <dtitle>Total IP Addresses <span style="color:limegreen;">Offline</span></dtitle>
             <div id="space"></div>
             <h2>64 %</h2>
             <h3>Last Port Scan: %HOSTS_OFFLINE_FINISHED%</h3>
@@ -221,14 +225,15 @@
 
     <div class="col-sm-3 col-lg-3">
 
-        <!-- LOCAL TIME BLOCK -->
         <div class="half-unit">
-            <dtitle>Countdown to Tango Party</dtitle>
+            <dtitle>Secret Stats</dtitle>
             <hr>
-            <div id="DateCountdown" data-date="2014-12-25 00:00:00" style="width: 400px; height: 65px; padding: 0px;"></div>
+            <div class="flexslider" style="margin-top:-10px;">
+                <ul class="slides">
+                    <li><img src="assets/img/slide01.png" alt="slider"></li>
+                </ul>
+            </div>
         </div>
-
-        <!-- SERVER UPTIME -->
         <div class="half-unit">
             <dtitle>North Korea WAN Connectivity</dtitle>
             <hr>
@@ -236,6 +241,7 @@
                 <p><img src="assets/img/down.png" alt="">&nbsp;&nbsp; <bold>Tango Down</bold></p>
             </div>
         </div>
+
     </div>
 </div><!-- /row -->
 
@@ -246,81 +252,17 @@
     <!-- INFORMATION BLOCK -->
     <div class="col-sm-3 col-lg-3">
         <div class="half-unit">
-            <dtitle>Tango Down Kit for Windows</dtitle>
+            <dtitle>Countdown to Tango Party</dtitle>
+            <hr>
+            <div id="DateCountdown" data-date="2014-12-25 00:00:00" style="width: 400px; height: 65px; padding: 0px;"></div>
+        </div>
+        <div class="half-unit">
+            <dtitle>Tango Down Party Kit for Windows</dtitle>
             <div class="info-user" style="margin-top:10px; margin-bottom: 10px;">
                 <span aria-hidden="true" class="li_megaphone fs2"></span>
             </div>
             <div class="text" style="text-align: center;">
                 <p>Kit Download Available on 12/25/14</p>
-            </div>
-        </div>
-        <div class="half-unit">
-            <dtitle>Share via social media</dtitle>
-            <div class="info-user" style="margin-top:10px;margin-bottom:10px;">
-                <a href="#" class="tweet"><span aria-hidden="true" class="li_bubble fs2"></span></a>
-                <!--<a href="#" id="fb_like"><span aria-hidden="true" class="li_like fs2"></span></a>-->
-                <!--<a href="#myModal" data-toggle="modal"><span aria-hidden="true" class="li_mail fs2"></span></a>-->
-                <a href="#myModal" data-toggle="modal"><span aria-hidden="true" class="li_world fs2"></span></a>
-            </div>
-            <script type="text/javascript">
-                $('a.tweet').click(function(e){
-
-                    //We tell our browser not to follow that link
-                    e.preventDefault();
-
-                    //We get the URL of the link
-                    var loc = $(this).attr('href');
-
-                    //We get the title of the link
-                    var title  = escape($(this).attr('title'));
-
-                    //We trigger a new window with the Twitter dialog, in the middle of the page
-                    window.open('http://twitter.com/share?url=http%3A%2F%2Fwww.NorthKoreaOffline.com&text=&via=nkoreaoffline&hashtags=NorthKoreaOffline%2CTangoDown%2CChristmasParty', 'twitterwindow', 'height=450, width=550, top='+($(window).height()/2 - 225) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
-
-                });
-                document.getElementById('fb_like').onclick = function() {
-                    FB.api(
-                            "/me/og.likes",
-                            "POST",
-                            {
-                                "object": "http:\/\/www.NorthKoreaOffline.com",
-                                "message": "#NorthKoreaOffline #TangoDown #ChristmasParty"
-                            },
-                            function (response) {
-                                if (response && !response.error) {
-                                    /* handle the result */
-                                }
-                            }
-                    );
-
-                    return false;
-                }
-            </script>
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Share Tango Down - #NorthKoreaOffline</h4>
-                        </div>
-                        <div class="modal-body">
-                            <input type="text" value="http://www.NorthKoreaOffline.com" onclick="this.select()" id="web_share" />
-                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-default" id="copy-button">Copy to Clipboard</button>
-                        </div>
-                        <script type="text/javascript">
-                            $("#copy-button").zclip({
-                                path: "assets/ZeroClipboard.swf",
-                                copy: $('#web_share').val()
-                            });
-                        </script>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
-            <div class="text" style="text-align:center;">
-                <p>Share North Korea Tango Down</p>
             </div>
         </div>
     </div>
@@ -330,17 +272,13 @@
     <div class="col-sm-3 col-lg-3">
         <div class="dash-unit">
             <dtitle style="padding-bottom: 5px;">Tango Down Party Kit Includes</dtitle>
+            <hr>
             <div class="accordion" id="accordion2">
                 <div class="accordion-group">
                     <div class="accordion-heading">
                         <a class="accordion-toggle acc-anchor" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
                             Toolbox of Educational Software
                         </a>
-                    </div>
-                    <div id="collapseThree" class="accordion-body collapse in">
-                        <div class="accordion-inner">
-                            desc coming soon.
-                        </div>
                     </div>
                 </div>
 
@@ -349,11 +287,6 @@
                         <a class="accordion-toggle acc-anchor" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
                             Collaboration and Planning Tools
                         </a>
-                    </div>
-                    <div id="collapseFour" class="accordion-body collapse in">
-                        <div class="accordion-inner">
-                            desc coming soon.
-                        </div>
                     </div>
                 </div>
 
@@ -364,11 +297,6 @@
                             Network Party Analyitcs Reporter
                         </a>
                     </div>
-                    <div id="collapseOne" class="accordion-body collapse in">
-                        <div class="accordion-inner">
-                            desc coming soon.
-                        </div>
-                    </div>
                 </div>
 
                 <div class="accordion-group">
@@ -376,11 +304,6 @@
                         <a class="accordion-toggle acc-anchor" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
                             Party Protesting Instruction Manual
                         </a>
-                    </div>
-                    <div id="collapseTwo" class="accordion-body collapse in">
-                        <div class="accordion-inner">
-                            desc coming soon.
-                        </div>
                     </div>
                 </div>
 

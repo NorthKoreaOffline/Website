@@ -47,10 +47,10 @@ window.onload = function() {
     }
 
     //Lets add some animation for fun
-    init(ctx, 30, 'k');
+    init(ctx, 30, '%');
 
     canvas = document.getElementById("canvas2");
     ctx = canvas.getContext("2d");
-    init(ctx, 40, 'Mb');
+    init(ctx, 20, '%');
 
 }
